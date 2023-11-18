@@ -1,7 +1,7 @@
-package br.com.cod3r.cm.aplicacao;
+package main2.aplicacao;
 
-import br.com.cod3r.cm.modelo.Tabuleiro;
-import br.com.cod3r.cm.visao.TabuleiroConsole;
+import main2.modelo.Tabuleiro;
+import main2.visao.TabuleiroConsole;
 
 public class Aplicacao {
 

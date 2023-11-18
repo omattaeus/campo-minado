@@ -1,10 +1,12 @@
-package br.com.cod3r.cm.modelo;
+package main2.modelo;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
+import main2.excecao.ExplosaoException;
+
 
 public class Tabuleiro {
 	

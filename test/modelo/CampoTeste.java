@@ -1,16 +1,16 @@
-package br.com.cod3r.cm.modelo;
+package modelo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
-import br.com.cod3r.cm.modelo.Campo;
+import main2.excecao.ExplosaoException;
+import main2.modelo.Campo;
 
 public class CampoTeste {
 
-	private Campo campo = new Campo(3, 3);
+	private Campo campo;
 	
 	@BeforeEach
 	void iniciarCampo() {

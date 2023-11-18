@@ -1,9 +1,9 @@
-package br.com.cod3r.cm.modelo;
+package main2.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
+import main2.excecao.ExplosaoException;
 
 public class Campo {
 
@@ -16,12 +16,12 @@ public class Campo {
 	
 	private List<Campo> vizinhos = new ArrayList<>();
 	
-	Campo(int linha, int coluna) {
+	public Campo(int linha, int coluna) {
 		this.linha = linha;
 		this.coluna = coluna;
 	}
 	
-	boolean adicionarVizinho(Campo vizinho) {
+	public boolean adicionarVizinho(Campo vizinho) {
 		boolean linhaDiferente = linha != vizinho.linha;
 		boolean colunaDiferente = coluna != vizinho.coluna;
 		boolean diagonal = linhaDiferente && colunaDiferente;
@@ -41,13 +41,13 @@ public class Campo {
 		}
 	}
 	
-	void alternarMarcacao() {
+	public void alternarMarcacao() {
 		if(!aberto) {
 			marcado = !marcado;
 		}
 	}
 	
-	boolean abrir() {
+	public boolean abrir() {
 		
 		if(!aberto && !marcado) {
 			aberto = true;
@@ -70,7 +70,7 @@ public class Campo {
 		return vizinhos.stream().noneMatch(v -> v.minado);
 	}
 	
-	void minar() {
+	public void minar() {
 		minado = true;
 	}
 	

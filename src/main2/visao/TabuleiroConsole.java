@@ -1,12 +1,13 @@
-package br.com.cod3r.cm.visao;
+package main2.visao;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
-import br.com.cod3r.cm.excecao.SairException;
-import br.com.cod3r.cm.modelo.Tabuleiro;
+import main2.excecao.ExplosaoException;
+import main2.excecao.SairException;
+import main2.modelo.Tabuleiro;
+
 
 public class TabuleiroConsole {
 
